@@ -14,7 +14,4 @@ def split_text(text, chunk_size=100, overlap=20):
         chunks.append(" ".join(chunk))
         i = i+chunk_size-overlap
 
-    # for i in range(0, len(text), chunk_size):
-    #     chunks.append(text[i:i+chunk_size])
-
     return chunks

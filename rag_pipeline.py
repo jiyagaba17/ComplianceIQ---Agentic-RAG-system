@@ -34,7 +34,6 @@ def run_pipeline():
     # Query
     query = "What are compliance risks?"
 
-    # ✅ FIXED LINE (new LangChain API)
     docs = retriever.invoke(query)
 
     # Combine retrieved content

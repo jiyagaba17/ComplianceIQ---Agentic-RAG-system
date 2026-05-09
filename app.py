@@ -21,14 +21,8 @@ def main():
     query = "What are compliance risks?"
     relevant_chunks = retrieve(query)
 
-    # SEND TO LLM
-    # response = get_llm_response(chunks[0])
     context = "".join(relevant_chunks)
     response = get_llm_response(context)
-
-    # PRINT ANSWER
-    # for i, chunk in enumerate(chunks):
-    #     print(f"Chunk {i}: {chunk}")
 
     print("Answer:")
     print(response)

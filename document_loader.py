@@ -12,7 +12,7 @@ def load_pdf(file_path):
 
     for page in reader.pages:
         extracted = page.extract_text()
-        if extracted:  # avoid None
+        if extracted:
             text += extracted
 
     return text

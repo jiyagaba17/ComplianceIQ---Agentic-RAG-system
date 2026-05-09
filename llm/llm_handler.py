@@ -70,7 +70,7 @@ def groq_response(prompt):
     return response.choices[0].message.content
 
 
-# 🔥 MAIN FUNCTION (UNIFIED)
+# MAIN FUNCTION (UNIFIED)
 def get_llm_response(context):
 
     prompt = build_prompt(context)
